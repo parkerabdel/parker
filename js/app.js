@@ -50,7 +50,7 @@ function saveDataToStorage(dataMap) {
 // El localStorage se actualiza desde el JSON cada vez que abre la app
 async function loadJSONToStorage() {
   try {
-    const res = await fetch("./data/proyecto/proyecto.json");
+    const res = await fetch("./data/ptoyecto/proyecto.json");
     if (!res.ok) return;
     const data = await res.json();
 
@@ -262,3 +262,4 @@ async function init() {
 }
 
 init();
+
