@@ -8,6 +8,7 @@ const IS_VIEWER = MODE === "viewer";
 
 const STORAGE_KEY = "lotevista_estados_v1";
 const STORAGE_DATA_KEY = "lotevista_data_v1";
+const STORAGE_VERSION_KEY = "lotevista_json_version";
 
 // ---------- Persistencia ESTADOS ----------
 function loadEstadosFromStorage() {
@@ -46,25 +47,28 @@ function saveDataToStorage(dataMap) {
 }
 
 // ---------- Cargar JSON externo ----------
-// ✅ SIEMPRE lee el JSON primero — es la fuente de verdad
-// El localStorage se actualiza desde el JSON cada vez que abre la app
+// ✅ Compara la fecha del JSON con la guardada en localStorage
+// Si el JSON es más nuevo → actualiza automáticamente en todas las máquinas
 async function loadJSONToStorage() {
   try {
     const res = await fetch("./data/ptoyecto/proyecto.json");
     if (!res.ok) return;
     const data = await res.json();
 
-    // Siempre sobreescribe localStorage con el JSON
-    if (data.estados) {
-      saveEstadosToStorage(data.estados);
-      console.log("✅ Estados cargados desde proyecto.json");
-    }
-    if (data.datos) {
-      saveDataToStorage(data.datos);
-      console.log("✅ Datos cargados desde proyecto.json");
+    const savedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
+    const jsonVersion = data.updatedAt;
+
+    if (savedVersion !== jsonVersion) {
+      // JSON es más nuevo — sobreescribe localStorage
+      if (data.estados) saveEstadosToStorage(data.estados);
+      if (data.datos) saveDataToStorage(data.datos);
+      localStorage.setItem(STORAGE_VERSION_KEY, jsonVersion);
+      console.log("✅ JSON actualizado:", jsonVersion);
+    } else {
+      console.log("ℹ️ JSON sin cambios, usando localStorage");
     }
   } catch (e) {
-    console.warn("⚠️ No se pudo cargar proyecto.json, usando localStorage:", e);
+    console.warn("⚠️ No se pudo cargar proyecto.json:", e);
   }
 }
 
@@ -245,7 +249,7 @@ function initExportUI() {
 
 // ---------- Init ----------
 async function init() {
-  // 1) Siempre lee el JSON primero — sobreescribe localStorage
+  // 1) Compara versión del JSON y actualiza si es necesario
   await loadJSONToStorage();
 
   // 2) Aplica datos al LOTES antes de crear el mapa
@@ -262,4 +266,5 @@ async function init() {
 }
 
 init();
+
 
