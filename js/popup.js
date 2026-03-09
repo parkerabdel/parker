@@ -28,7 +28,7 @@ export function showLotePopup(feature, { onChangeEstado, onSaveData, canEdit = t
   const p = feature.properties || {};
   const id = p.id || "L13";
 
-  const proyecto = p.proyecto || "Proyecto Machayhuaycco";
+  const proyecto = p.proyecto || "";
   const etapa = p.etapa || "Etapa 1";
    const ubicacion = p.ubicacion || "";
 
@@ -57,7 +57,7 @@ export function showLotePopup(feature, { onChangeEstado, onSaveData, canEdit = t
       <button class="lv2-close" id="lv2Close" aria-label="Cerrar">✕</button>
       <div class="lv2-heroText">
         <div class="lv2-title">${esc(proyecto)}</div>
-        <div class="lv2-sub">${esc(etapa)} · ${esc(id)} · ${esc(ubicacion)}</div>
+        <div class="lv2-sub">${esc(etapa)}  · ${esc(ubicacion)}</div>
       </div>
     </div>
 
@@ -262,4 +262,5 @@ export function showLotePopup(feature, { onChangeEstado, onSaveData, canEdit = t
       node.classList.add("lv2-edit-disabled");
     });
   }
+
 }
