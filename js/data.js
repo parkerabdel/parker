@@ -9,7 +9,7 @@ export const LOTES = {
     // L01
     {
       type: "Feature",
-      properties: { id:"M-L01",label: "L01" , estado: "disponible",labelPoint: [-74.257930, -13.137580]},
+      properties: { id:"M-L01",label: "L01" ,  proyecto: "Proyecto Machayhuaycco", estado: "disponible",labelPoint: [-74.257930, -13.137580]},
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -26,7 +26,7 @@ export const LOTES = {
     // L02
     {
       type: "Feature",
-      properties: { id: "M-L02",label:"L02", estado: "disponible" ,labelPoint: [-74.257883, -13.137463]},
+      properties: { id: "M-L02",label:"L02",  proyecto: "Proyecto Machayhuaycco", estado: "disponible" ,labelPoint: [-74.257883, -13.137463]},
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -42,7 +42,7 @@ export const LOTES = {
     // L03
     {
       type: "Feature",
-      properties: { id: "M-L03", label: "L03", estado: "disponible" },
+      properties: { id: "M-L03", label: "L03", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -58,7 +58,7 @@ export const LOTES = {
     // L04
     {
       type: "Feature",
-      properties: { id: "M-L04", label: "L04", estado: "disponible" },
+      properties: { id: "M-L04", label: "L04", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -74,7 +74,7 @@ export const LOTES = {
     // L05
     {
       type: "Feature",
-      properties: { id: "M-L05", label: "L05", estado: "disponible" },
+      properties: { id: "M-L05", label: "L05", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -90,7 +90,7 @@ export const LOTES = {
     // L06
     {
       type: "Feature",
-      properties: {  id: "M-L06", label: "L06", estado: "disponible" },
+      properties: {  id: "M-L06", label: "L06", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -106,7 +106,7 @@ export const LOTES = {
     // L07 (tenías el punto 3 repetido como 4; lo cierro correctamente)
     {
       type: "Feature",
-      properties: {id:"M-L07",label:"L07", estado: "disponible" },
+      properties: {id:"M-L07",label:"L07",  proyecto: "Proyecto Machayhuaycco",estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -122,7 +122,7 @@ export const LOTES = {
     // L08
     {
       type: "Feature",
-      properties: {id:"M-L08",label:"L08", estado: "disponible" },
+      properties: {id:"M-L08",label:"L08", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -138,7 +138,7 @@ export const LOTES = {
     // L09
     {
       type: "Feature",
-      properties: {id:"M-L09",label:"L09", estado: "disponible" },
+      properties: {id:"M-L09",label:"L09", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -156,7 +156,7 @@ export const LOTES = {
     // L10
     {
       type: "Feature",
-      properties: {id:"M-L10",label:"L10", estado: "disponible" },
+      properties: {id:"M-L10",label:"L10", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -172,7 +172,7 @@ export const LOTES = {
     // L11
     {
       type: "Feature",
-      properties: {id:"M-L11",label:"L11", estado: "disponible" },
+      properties: {id:"M-L11",label:"L11", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -188,7 +188,7 @@ export const LOTES = {
     // L12
     {
       type: "Feature",
-      properties: {id:"M-L12",label:"L12", estado: "disponible" },
+      properties: {id:"M-L12",label:"L12", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -204,7 +204,7 @@ export const LOTES = {
     // L13
     {
       type: "Feature",
-      properties: { id:"M-L13",label:"L13", estado: "disponible" },
+      properties: { id:"M-L13",label:"L13", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -220,7 +220,7 @@ export const LOTES = {
     // L14
     {
       type: "Feature",
-      properties: {id:"M-L14",label:"L14", estado: "disponible" },
+      properties: {id:"M-L14",label:"L14", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -236,7 +236,7 @@ export const LOTES = {
     // L15
     {
       type: "Feature",
-      properties: { id:"M-L15",label:"L15", estado: "disponible" },
+      properties: { id:"M-L15",label:"L15", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -253,7 +253,7 @@ export const LOTES = {
     // L16
     {
       type: "Feature",
-      properties: {id:"M-L16",label:"L16", estado: "disponible" },
+      properties: {id:"M-L16",label:"L16",  proyecto: "Proyecto Machayhuaycco",estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -269,7 +269,7 @@ export const LOTES = {
     // L17
     {
       type: "Feature",
-      properties: {id:"M-L17",label:"L17", estado: "disponible" , labelPoint: [-74.257310, -13.137050] },
+      properties: {id:"M-L17",label:"L17", proyecto: "Proyecto Machayhuaycco", estado: "disponible" , labelPoint: [-74.257310, -13.137050] },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -285,7 +285,7 @@ export const LOTES = {
     // L18
     {
       type: "Feature",
-      properties: {id:"M-L18",label:"L18", estado: "disponible" },
+      properties: {id:"M-L18",label:"L18", proyecto: "Proyecto Machayhuaycco", estado: "disponible" },
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -306,7 +306,7 @@ export const LOTES = {
   // 👇 L1 DE PAMPACCHOCHA
     {
       type: "Feature",
-      properties: { id: "P-L01", label: "L01", estado: "disponible", labelPoint: [-74.247208, -13.141027]},
+      properties: { id: "P-L01", label: "L01", proyecto: "Proyecto Pampacchocha", estado: "disponible", labelPoint: [-74.247208, -13.141027]},
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -324,7 +324,7 @@ export const LOTES = {
 //  👇 L2 DE PAMPACCHOCHA
     {
       type: "Feature",
-      properties: { id: "P-L02", label: "L02", estado: "disponible", labelPoint: [-74.247257, -13.141101]},
+      properties: { id: "P-L02", label: "L02",  proyecto: "Proyecto Pampacchocha",estado: "disponible", labelPoint: [-74.247257, -13.141101]},
       geometry: {
         type: "Polygon",
         coordinates: [[
@@ -347,7 +347,7 @@ export const LOTES = {
 // L1: P2,P3,P4,P5,P25
       {
         type: "Feature",
-        properties: { id: "H-L01", label: "L01", estado: "disponible" },
+        properties: { id: "H-L01", label: "L01", proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -364,7 +364,7 @@ export const LOTES = {
       // L2: P5,P6,P24,P25
       {
         type: "Feature",
-        properties: { id: "H-L02", label: "L02", estado: "disponible" },
+        properties: { id: "H-L02", label: "L02",  proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -380,7 +380,7 @@ export const LOTES = {
       // L3: P6,P7,P23,P24
       {
         type: "Feature",
-        properties: { id: "H-L03", label: "L03", estado: "disponible" },
+        properties: { id: "H-L03", label: "L03", proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -396,7 +396,7 @@ export const LOTES = {
       // L4: P7,P8,P22,P23
       {
         type: "Feature",
-        properties: { id: "H-L04", label: "L04", estado: "disponible" },
+        properties: { id: "H-L04", label: "L04", proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -412,7 +412,7 @@ export const LOTES = {
       // L5: P8,P9,P21,P22
       {
         type: "Feature",
-        properties: { id: "H-L05", label: "L05", estado: "disponible" },
+        properties: { id: "H-L05", label: "L05", proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -428,7 +428,7 @@ export const LOTES = {
       // L6: P9,P10,P20,P21
       {
         type: "Feature",
-        properties: { id: "H-L06", label: "L06", estado: "disponible" },
+        properties: { id: "H-L06", label: "L06",  proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -444,7 +444,7 @@ export const LOTES = {
       // L7: P10,P11,P19,P20
       {
         type: "Feature",
-        properties: { id: "H-L07", label: "L07", estado: "disponible" },
+        properties: { id: "H-L07", label: "L07",  proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -460,7 +460,7 @@ export const LOTES = {
       // L8: P11,P12,P18,P19
       {
         type: "Feature",
-        properties: {id: "H-L08", label: "L08", estado: "disponible" },
+        properties: {id: "H-L08", label: "L08",  proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -476,7 +476,7 @@ export const LOTES = {
       // L9: P12,P13,P26,P27
       {
         type: "Feature",
-        properties: {id: "H-L09", label: "L09", estado: "disponible" },
+        properties: {id: "H-L09", label: "L09",  proyecto: "Proyecto Huanupata", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -492,7 +492,7 @@ export const LOTES = {
       // L10: P27,P26,P17,P18
       {
         type: "Feature",
-        properties: { id: "H-L10", label: "L10", estado: "disponible" },
+        properties: { id: "H-L10", label: "L10",  proyecto: "Proyecto Huanupata",estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -513,7 +513,7 @@ export const LOTES = {
       // L1: P1,P2,P3,P4,P18
       {
         type: "Feature",
-        properties: { id: "C-L01", label: "L01", estado: "disponible" },
+        properties: { id: "C-L01", label: "L01",proyecto: "Proyecto Cañones", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -530,7 +530,7 @@ export const LOTES = {
       // L2: P4,P5,P17,P18
       {
         type: "Feature",
-        properties: { id: "C-L02", label: "L02", estado: "disponible" },
+        properties: { id: "C-L02", label: "L02", proyecto: "Proyecto Cañones", estado: "disponible" },
         geometry: {
           type: "Polygon",
           coordinates: [[
@@ -554,7 +554,7 @@ export const LOTES = {
 // L1: F,G,H,I
 {
   type: "Feature",
-  properties: { id: "B-L01", label: "L01", estado: "disponible" },
+  properties: { id: "B-L01", label: "L01",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -570,7 +570,7 @@ export const LOTES = {
 // L2: I,J,E,F
 {
   type: "Feature",
-  properties: {id: "B-L02", label: "L02", estado: "disponible" },
+  properties: {id: "B-L02", label: "L02", proyecto: "Proyecto  Bugambilias",estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -586,7 +586,7 @@ export const LOTES = {
 // L3: J,K,C,E
 {
   type: "Feature",
-  properties: { id: "B-L03", label: "L03", estado: "disponible" },
+  properties: { id: "B-L03", label: "L03",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -602,7 +602,7 @@ export const LOTES = {
 // L4: B,C,K,L,M
 {
   type: "Feature",
-  properties: { id: "B-L04", label: "L04", estado: "disponible" },
+  properties: { id: "B-L04", label: "L04",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -619,7 +619,7 @@ export const LOTES = {
 // L5: A,B,M,N
 {
   type: "Feature",
-  properties: { id: "B-L05", label: "L05", estado: "disponible" },
+  properties: { id: "B-L05", label: "L05",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -635,7 +635,7 @@ export const LOTES = {
 // L6: A,O,P,D
 {
   type: "Feature",
-  properties: { id: "B-L06", label: "L06", estado: "disponible" },
+  properties: { id: "B-L06", label: "L06",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -651,7 +651,7 @@ export const LOTES = {
 // L7: P,D,G,Q
 {
   type: "Feature",
-  properties: { id: "B-L07", label: "L07", estado: "disponible" },
+  properties: { id: "B-L-10", label: "L10",proyecto: "Proyecto  Bugambilias", estado: "disponible" },
   geometry: {
     type: "Polygon",
     coordinates: [[
@@ -690,6 +690,7 @@ export const LOTES = {
 
   ],
 };
+
 
 
 
