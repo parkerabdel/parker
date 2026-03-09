@@ -57,7 +57,7 @@ export function showLotePopup(feature, { onChangeEstado, onSaveData, canEdit = t
       <button class="lv2-close" id="lv2Close" aria-label="Cerrar">✕</button>
       <div class="lv2-heroText">
         <div class="lv2-title">${esc(proyecto)}</div>
-        <div class="lv2-sub">${esc(etapa)} · ${esc(label)} · ${esc(ubicacion)}</div>
+        <div class="lv2-sub">${esc(etapa)} · ${esc(p.label || id)} · ${esc(ubicacion)}</div>
       </div>
     </div>
 
@@ -264,4 +264,5 @@ export function showLotePopup(feature, { onChangeEstado, onSaveData, canEdit = t
   }
 
 }
+
 
