@@ -45,6 +45,29 @@ function saveDataToStorage(dataMap) {
   } catch {}
 }
 
+// ---------- Cargar JSON externo ----------
+// ✅ SIEMPRE lee el JSON primero — es la fuente de verdad
+// El localStorage se actualiza desde el JSON cada vez que abre la app
+async function loadJSONToStorage() {
+  try {
+    const res = await fetch("./data/proyecto/proyecto.json");
+    if (!res.ok) return;
+    const data = await res.json();
+
+    // Siempre sobreescribe localStorage con el JSON
+    if (data.estados) {
+      saveEstadosToStorage(data.estados);
+      console.log("✅ Estados cargados desde proyecto.json");
+    }
+    if (data.datos) {
+      saveDataToStorage(data.datos);
+      console.log("✅ Datos cargados desde proyecto.json");
+    }
+  } catch (e) {
+    console.warn("⚠️ No se pudo cargar proyecto.json, usando localStorage:", e);
+  }
+}
+
 // ---------- Aplicar ESTADOS ----------
 function applyEstadosToLOTES() {
   const estadosMap = loadEstadosFromStorage();
@@ -71,14 +94,8 @@ function applyDataToLOTES() {
   }
 }
 
-// aplicar antes de crear mapa
-applyEstadosToLOTES();
-applyDataToLOTES();
-
-const map = createMap();
-
 // ---------- UI: Opacity Slider ----------
-function initOpacityUI() {
+function initOpacityUI(map) {
   const slider = document.getElementById("opacitySlider");
   const val = document.getElementById("opacityVal");
   if (!slider) return;
@@ -95,8 +112,8 @@ function initOpacityUI() {
 }
 
 // ---------- Cambiar ESTADO ----------
-function updateLoteEstado(id, nextEstado) {
-  if (IS_VIEWER) return null; // ✅ público NO edita
+function updateLoteEstado(map, id, nextEstado) {
+  if (IS_VIEWER) return null;
 
   const f = LOTES.features.find((x) => x.properties?.id === id);
   if (!f) return null;
@@ -115,8 +132,8 @@ function updateLoteEstado(id, nextEstado) {
 }
 
 // ---------- GUARDAR DATOS EDITADOS ----------
-function updateLoteData(id, partial) {
-  if (IS_VIEWER) return null; // ✅ público NO edita
+function updateLoteData(map, id, partial) {
+  if (IS_VIEWER) return null;
 
   const f = LOTES.features.find((x) => x.properties?.id === id);
   if (!f) return null;
@@ -134,7 +151,7 @@ function updateLoteData(id, partial) {
 }
 
 // ---------- Popup ----------
-function openPopupForFeature(feature) {
+function openPopupForFeature(map, feature) {
   if (!feature) return;
 
   const id = feature.properties?.id;
@@ -146,13 +163,13 @@ function openPopupForFeature(feature) {
 
       onChangeEstado: (nextEstado) => {
         if (IS_VIEWER) return;
-        const updated = updateLoteEstado(id, nextEstado);
+        const updated = updateLoteEstado(map, id, nextEstado);
         if (updated) render(updated);
       },
 
       onSaveData: (partial) => {
         if (IS_VIEWER) return;
-        const updated = updateLoteData(id, partial);
+        const updated = updateLoteData(map, id, partial);
         if (updated) render(updated);
       },
     });
@@ -163,17 +180,17 @@ function openPopupForFeature(feature) {
 }
 
 // ---------- Map Events ----------
-function initMapEvents() {
+function initMapEvents(map) {
   map.on("load", () => {
     map.on("click", "lotes-fill", (e) => {
       e.originalEvent?.stopPropagation?.();
-      openPopupForFeature(e.features?.[0]);
+      openPopupForFeature(map, e.features?.[0]);
     });
 
     if (map.getLayer("lotes-badge")) {
       map.on("click", "lotes-badge", (e) => {
         e.originalEvent?.stopPropagation?.();
-        openPopupForFeature(e.features?.[0]);
+        openPopupForFeature(map, e.features?.[0]);
       });
     }
 
@@ -216,7 +233,7 @@ function downloadJSON(filename, obj) {
 }
 
 function initExportUI() {
-  if (IS_VIEWER) return; // ✅ público no exporta
+  if (IS_VIEWER) return;
   const btn = document.getElementById("exportBtn");
   if (!btn) return;
 
@@ -227,6 +244,21 @@ function initExportUI() {
 }
 
 // ---------- Init ----------
-initOpacityUI();
-initMapEvents();
-initExportUI();
+async function init() {
+  // 1) Siempre lee el JSON primero — sobreescribe localStorage
+  await loadJSONToStorage();
+
+  // 2) Aplica datos al LOTES antes de crear el mapa
+  applyEstadosToLOTES();
+  applyDataToLOTES();
+
+  // 3) Crea el mapa
+  const map = createMap();
+
+  // 4) Inicia UI
+  initOpacityUI(map);
+  initMapEvents(map);
+  initExportUI();
+}
+
+init();
