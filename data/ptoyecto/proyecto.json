@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "updatedAt": "2026-03-09T16:25:09.875Z",
+  "estados": {
+    "L01": "reservado",
+    "MAC-L01": "disponible",
+    "PAM-L01": "reservado",
+    "HUA-L01": "vendido",
+    "L-01": "reservado",
+    "L-02": "vendido",
+    "L-03": "disponible",
+    "L-04": "reservado",
+    "L-05": "vendido",
+    "L-08": "vendido",
+    "L-10": "vendido",
+    "L2": "reservado",
+    "L1": "reservado",
+    "L/02": "reservado",
+    "L/01": "vendido",
+    "L*07": "reservado",
+    "L*02": "vendido",
+    "L17": "reservado",
+    "H-L01": "vendido",
+    "C-L01": "disponible",
+    "M-L01": "reservado",
+    "M-L03": "vendido",
+    "M-L11": "disponible",
+    "M-L16": "vendido",
+    "M-L04": "vendido",
+    "M-L05": "vendido",
+    "H-L06": "reservado",
+    "H-L09": "disponible",
+    "H-L08": "vendido",
+    "H-L07": "vendido",
+    "H-L02": "vendido",
+    "H-L03": "vendido",
+    "H-L04": "vendido",
+    "H-L05": "vendido",
+    "B-L06": "vendido",
+    "B-L05": "vendido",
+    "B-L04": "vendido",
+    "B-L03": "vendido",
+    "B-L01": "vendido",
+    "B-L02": "disponible"
+  },
+  "datos": {
+    "L01": {
+      "precio": "100,000"
+    },
+    "M-L01": {
+      "area_m2": "300",
+      "precio": "-",
+      "perimetro_total": "73",
+      "frente": "14.96",
+      "derecha": "12.20",
+      "fondo": "23.98",
+      "izquierda": "21.95"
+    },
+    "M-L10": {
+      "precio": "-",
+      "perimetro_total": "61",
+      "area_m2": "200",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "P-L01": {
+      "precio": "-",
+      "area_m2": "200",
+      "perimetro_total": "60",
+      "frente": "10",
+      "fondo": "10",
+      "derecha": "20",
+      "izquierda": "20"
+    },
+    "P-L02": {
+      "precio": "-",
+      "area_m2": "200",
+      "perimetro_total": "60",
+      "frente": "10",
+      "fondo": "10",
+      "derecha": "20",
+      "izquierda": "20"
+    },
+    "H-L01": {
+      "area_m2": "350",
+      "perimetro_total": "77.08",
+      "precio": "-",
+      "frente": "17",
+      "fondo": "17.05",
+      "izquierda": "21.47",
+      "derecha": "21.56"
+    },
+    "H-L02": {
+      "area_m2": "350",
+      "perimetro_total": "77.74",
+      "precio": "-",
+      "derecha": "21.70",
+      "izquierda": "21.56",
+      "frente": "17.21",
+      "fondo": "17.26"
+    },
+    "H-L03": {
+      "area_m2": "200",
+      "perimetro_total": "63",
+      "precio": "-",
+      "derecha": "21.77",
+      "frente": "9.80",
+      "fondo": "9.82",
+      "izquierda": "21.70"
+    },
+    "H-L04": {
+      "area_m2": "200",
+      "perimetro_total": "63.17",
+      "precio": "-",
+      "derecha": "21.85",
+      "frente": "9.76",
+      "fondo": "9.79",
+      "izquierda": "21.77"
+    },
+    "H-L05": {
+      "area_m2": "200",
+      "perimetro_total": "63.26",
+      "precio": "-",
+      "derecha": "21.92",
+      "frente": "9.73",
+      "fondo": "9.76",
+      "izquierda": "21.85"
+    },
+    "H-L06": {
+      "area_m2": "180",
+      "perimetro_total": "61.42",
+      "precio": "-",
+      "derecha": "21.99",
+      "frente": "8.74",
+      "fondo": "8.76",
+      "izquierda": "21.92"
+    },
+    "H-L07": {
+      "area_m2": "200",
+      "perimetro_total": "63.42",
+      "precio": "-",
+      "derecha": "22.07",
+      "frente": "9.66",
+      "fondo": "9.69",
+      "izquierda": "21.99"
+    },
+    "H-L08": {
+      "area_m2": "200",
+      "perimetro_total": "63.50",
+      "precio": "-",
+      "derecha": "22.14",
+      "frente": "9.63",
+      "fondo": "9.66",
+      "izquierda": "22.07"
+    },
+    "H-L09": {
+      "area_m2": "190",
+      "perimetro_total": "60.94",
+      "precio": "-",
+      "frente": "12.69",
+      "fondo": "9.04",
+      "derecha": "21.59",
+      "izquierda": "17.63"
+    },
+    "H-L10": {
+      "precio": "-",
+      "area_m2": "190",
+      "perimetro_total": "58.27",
+      "frente": "14.86",
+      "fondo": "17.63",
+      "izquierda": "13.10",
+      "derecha": "12.69"
+    },
+    "C-L02": {
+      "precio": "-",
+      "area_m2": "210",
+      "perimetro_total": "65.46",
+      "frente": "8",
+      "fondo": "10.05",
+      "derecha": "25.34",
+      "izquierda": "22.07"
+    },
+    "C-L01": {
+      "area_m2": "211.90",
+      "perimetro_total": "67.34",
+      "frente": "18.70",
+      "derecha": "22.07",
+      "izquierda": "8.33",
+      "fondo": "18.20",
+      "precio": "-"
+    },
+    "B-L01": {
+      "area_m2": "200",
+      "perimetro_total": "57.63",
+      "precio": "-",
+      "izquierda": "20.49",
+      "frente": "12.78",
+      "fondo": "11.97",
+      "derecha": "12.39"
+    },
+    "B-L02": {
+      "area_m2": "250",
+      "perimetro_total": "65.86",
+      "precio": "-",
+      "frente": "10.03",
+      "fondo": "9.40",
+      "derecha": "20.49",
+      "izquierda": "25.94"
+    },
+    "B-L03": {
+      "area_m2": "250",
+      "perimetro_total": "66.57",
+      "precio": "-",
+      "frente": "8.60",
+      "fondo": "8.06",
+      "derecha": "25.94",
+      "izquierda": "23.97"
+    },
+    "B-L04": {
+      "area_m2": "200",
+      "perimetro_total": "63.24",
+      "precio": "-",
+      "derecha": "23.97",
+      "frente": "8.93",
+      "fondo": "7.59",
+      "izquierda": "22.75"
+    },
+    "B-L05": {
+      "area_m2": "200",
+      "perimetro_total": "63.24",
+      "precio": "-",
+      "frente": "10.09",
+      "fondo": "15.36",
+      "derecha": "22.75",
+      "izquierda": "16.74"
+    },
+    "B-L06": {
+      "area_m2": "200",
+      "perimetro_total": "69.98",
+      "precio": "-",
+      "frente": "8.33",
+      "fondo": "7.50",
+      "derecha": "25.27",
+      "izquierda": "28.88"
+    },
+    "B-L07": {
+      "area_m2": "200",
+      "perimetro_total": "69.22",
+      "precio": "-",
+      "frente": "7.50",
+      "fondo": "7.50",
+      "derecha": "27.11",
+      "izquierda": "27.11"
+    },
+    "M-L02": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "21.95",
+      "izquierda": "20.39"
+    },
+    "M-L03": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L04": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L05": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L06": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L07": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L08": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L09": {
+      "area_m2": "170",
+      "precio": "-",
+      "perimetro_total": "73.50",
+      "frente": "19.11",
+      "fondo": "20.21",
+      "derecha": "20.39",
+      "izquierda": "13.78"
+    },
+    "M-L11": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.39"
+    },
+    "M-L12": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.40",
+      "izquierda": "20.39"
+    },
+    "M-L13": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.39",
+      "izquierda": "20.40"
+    },
+    "M-L14": {
+      "area_m2": "200",
+      "perimetro_total": "61",
+      "precio": "-",
+      "frente": "10.11",
+      "fondo": "10.11",
+      "derecha": "20.40",
+      "izquierda": "20.39"
+    },
+    "M-L15": {
+      "area_m2": "223.50",
+      "perimetro_total": "63.80",
+      "precio": "-",
+      "frente": "17.23",
+      "fondo": "21.16",
+      "derecha": "9.89",
+      "izquierda": "15.56"
+    },
+    "M-L16": {
+      "area_m2": "206.29",
+      "perimetro_total": "62.90",
+      "precio": "-",
+      "frente": "11.03",
+      "fondo": "13.97",
+      "derecha": "15.56",
+      "izquierda": "22.44"
+    },
+    "M-L17": {
+      "area_m2": "217",
+      "perimetro_total": "70",
+      "precio": "-",
+      "frente": "8.84",
+      "fondo": "10.91",
+      "derecha": "22.44",
+      "izquierda": "27.47"
+    },
+    "M-L18": {
+      "area_m2": "300",
+      "perimetro_total": "75.80",
+      "precio": "-",
+      "frente": "11.01",
+      "fondo": "6.30",
+      "derecha": "27.47",
+      "izquierda": "31.08"
+    }
+  }
+}
