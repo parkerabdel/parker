@@ -51,7 +51,7 @@ function saveDataToStorage(dataMap) {
 // Si el JSON es más nuevo → actualiza automáticamente en todas las máquinas
 async function loadJSONToStorage() {
   try {
-    const res = await fetch("./data/ptoyecto/proyecto.json");
+    const res = await fetch(`./data/ptoyecto/proyecto.json?t=${Date.now()}`);
     if (!res.ok) return;
     const data = await res.json();
 
@@ -266,5 +266,6 @@ async function init() {
 }
 
 init();
+
 
 
