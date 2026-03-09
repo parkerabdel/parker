@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-03-09T16:25:09.875Z",
+  "updatedAt": "2026-03-09T17:26:57.583Z",
   "estados": {
     "L01": "reservado",
     "MAC-L01": "disponible",
@@ -48,8 +48,8 @@
       "precio": "100,000"
     },
     "M-L01": {
-      "area_m2": "310",
-      "precio": "-",
+      "area_m2": "300",
+      "precio": "1200",
       "perimetro_total": "73",
       "frente": "14.96",
       "derecha": "12.20",
